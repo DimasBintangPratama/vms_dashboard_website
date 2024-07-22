@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Team 3 Section Palembang</title>
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li>
+            <div class="logo">
+              <img src="./images/logo.png" alt="" />
+              <span>Dashboard Vending Machine</span>
+            </div>
+          </li>
+          <li>
+            <a href="index.html" class="active">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="teamprofile.html">
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Team Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <i class="fas fa-info-circle"></i>
+              <span class="nav-item">About Us</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="filter">
+        <p>Filter By Month</p>
+        <select id="mySelect">
+          <option value="all">Semua</option>
+          <option value="1">Januari</option>
+          <option value="2">Frebuari</option>
+          <option value="3">Maret</option>
+          <option value="4">April</option>
+          <option value="5">Mei</option>
+          <option value="6">Juni</option>
+          <option value="7">Juli</option>
+          <option value="8">Agustus</option>
+          <option value="9">September</option>
+          <option value="10">Oktober</option>
+          <option value="11">November</option>
+          <option value="12">Desember</option>
+        </select>
+      </div>
+      <div class="content">
+        <div class="section">
+          <h3>Produk Paling Laku Selama Tahun 2022</h3>
+          <div>
+            <canvas id="myChart1"></canvas>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Kategori Paling Laku Selama Tahun 2022</h3>
+          <div>
+            <canvas id="myChart2"></canvas>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Lokasi Dengan Penjualan Paling Banyak Selama Tahun 2022</h3>
+          <div>
+            <canvas id="myChart3"></canvas>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Tipe Pembayaran Paling Banyak Selama Tahun 2022</h3>
+          <div>
+            <canvas id="myChart4"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2024 Team 3 - Section Palembang</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
